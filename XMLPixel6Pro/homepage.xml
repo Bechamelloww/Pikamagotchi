@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="266dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="78dp"
+        android:background="@null"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pikachu"
+        app:layout_constraintVertical_bias="0.075"
+        app:srcCompat="@drawable/playbutton"
+        tools:ignore="MissingConstraints" />
+
+
+    <ProgressBar
+        android:id="@+id/happiness"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="183dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:progressTint="@color/teal_200"
+        android:scaleY="4"
+        app:layout_constraintBottom_toTopOf="@+id/hunger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ProgressBar
+        android:id="@+id/hunger"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="185dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="156dp"
+        android:progressTint="#FFC107"
+        android:scaleY="4"
+        app:layout_constraintBottom_toTopOf="@+id/pikachu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/faim"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/faim"
+        android:layout_width="66dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="30dp"
+        android:scaleType="fitCenter"
+        android:text="FAIM"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/feedButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bonheur"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <TextView
+        android:id="@+id/bonheur"
+        android:layout_width="118dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="76dp"
+        android:scaleType="fitCenter"
+        android:text="BONHEUR"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/feedButton"
+        app:layout_constraintEnd_toStartOf="@+id/happiness"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/shopButton"
+        android:layout_width="70dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/playButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pikachu"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/shopicon" />
+
+    <ImageButton
+        android:id="@+id/saveButton"
+        android:layout_width="71dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="14dp"
+        android:background="@null"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/playButton"
+        app:layout_constraintEnd_toStartOf="@+id/inventoryButton"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toEndOf="@+id/shopButton"
+        app:layout_constraintTop_toBottomOf="@+id/pikachu"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/saveicon"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/evolvebutton"
+        android:layout_width="53dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="8dp"
+        android:background="@null"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/playButton"
+        app:layout_constraintEnd_toStartOf="@+id/saveButton"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/shopButton"
+        app:layout_constraintTop_toBottomOf="@+id/pikachu"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/evolve" />
+
+    <ImageButton
+        android:id="@+id/inventoryButton"
+        android:layout_width="69dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/playButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toEndOf="@+id/shopButton"
+        app:layout_constraintTop_toBottomOf="@+id/pikachu"
+        app:layout_constraintVertical_bias="0.578"
+        app:srcCompat="@drawable/backpack" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/pikachu"
+        android:layout_width="409dp"
+        android:layout_height="292dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/pikachu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <TextView
+        android:id="@+id/moneylay"
+        android:layout_width="83dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="22dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/pikachu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hunger"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/pikachu"
+        app:layout_constraintEnd_toStartOf="@+id/moneylay"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hunger"
+        app:layout_constraintVertical_bias="0.114"
+        app:srcCompat="@drawable/coin" />
+
+    <Button
+        android:id="@+id/feedButton"
+        android:layout_width="172dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="71dp"
+        android:text="NOURRIR"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/pikachu"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hunger"
+        app:layout_constraintVertical_bias="0.279" />
+</androidx.constraintlayout.widget.ConstraintLayout>
